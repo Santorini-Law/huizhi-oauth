@@ -34,10 +34,9 @@ public class AuthorizationServerConfigurer extends AuthorizationServerConfigurer
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("test-client")
-                .secret(passwordEncoder.encode("test-secret"))
-                .authorizedGrantTypes("refresh_token", "password")
-                .scopes("default-scope");
+                .withClient("huizhi-client")
+                .secret(passwordEncoder.encode("LQhdpf!963"))
+                .authorizedGrantTypes("refresh_token", "password");
     }
 
     @Override
